@@ -13,6 +13,6 @@ function DataSource(onSuccess, onFailed) {
     if (filteredClubs.length) {
         this.onSuccess(filteredClubs);
     } else {
-        this.onFailed(keyword + " is not found");
+        this.onFailed(`${keyword} is not found`);
     }
  };
